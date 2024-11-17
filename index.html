@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Destinations</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+            <img src="Pictures/airdnd-high-resolution-logo-transparent.png" alt="Logo" class="navbar-logo"> <!--logo here -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center text-white">
+        <div class="container">
+            <h1 class="display-4 mb-3">Explore Your Next Holiday Destination</h1>
+            <p class="lead">Discover unforgettable experiences with handpicked destinations. Book your dream vacation today.</p>
+            <button id="startExploringBtn" class="btn btn-primary">Start Exploring</button>
+        </div>
+    </section>
+
+
+    <script>
+        // Wait until the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            // Select the Start Exploring button
+            const startExploringBtn = document.getElementById('startExploringBtn');
+
+            // Check if the button exists
+            if (startExploringBtn) {
+                // Add click event listener to the button
+                startExploringBtn.addEventListener('click', function () {
+                    // Show the alert when clicked
+                    alert("Sorry, we cannot help you with this at the moment.");
+                });
+            }
+        });
+    </script>
+    <!-- Main Content -->
+    <div class="container mt-5">
+
+        <!-- Holiday Explanation Section -->
+        <section>
+            <header class="text-center mb-5">
+                <h2>Why Choose Us?</h2>
+                <p>We offer unique destinations, personalized recommendations, and seamless booking experiences.</p>
+            </header>
+
+            <!--Destination Cards -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow-lg rounded-3 equal-card">
+                        <img src="Pictures/pexels-pixabay-237272.jpg" class="card-img-top rounded-3" alt="Beach Vacation">
+                        <div class="card-body">
+                            <h5 class="card-title">Beach Paradise</h5>
+                            <p class="card-text">Relax on pristine beaches with turquoise waters and luxurious stays.</p>
+                            <a href="beach-paradise.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow-lg rounded-3 equal-card">
+                        <img src="Pictures/pexels-silentjars-5110226.jpg" class="card-img-top rounded-3" alt="Mountain Adventure">
+                        <div class="card-body">
+                            <h5 class="card-title">Mountain Adventure</h5>
+                            <p class="card-text">Hike through breathtaking trails and cozy up in a mountain lodge.</p>
+                            <a href="mountain-adventure.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow-lg rounded-3">
+                        <img src="Pictures/pexels-vincent-gerbouin-445991-2263669.jpg" class="card-img-top rounded-3" alt="City Break">
+                        <div class="card-body">
+                            <h5 class="card-title">City Break</h5>
+                            <p class="card-text">Experience the energy and culture of vibrant cities. Enjoy the city life</p>
+                            <a href="city-break.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Experiences Section -->
+        <section class="mt-5">
+            <h2 class="text-center">Featured Experiences</h2>
+            <p class="text-center mb-4">Handpicked experiences to elevate your holidays.</p>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow-lg rounded-3 equal-card">
+                        <img src="Pictures/pexels-valeriya-29380189.jpg" class="card-img-top rounded-3" alt="Culinary Tour">
+                        <div class="card-body">
+                            <h5 class="card-title">Culinary Tour</h5>
+                            <p class="card-text">Embark on a gastronomic journey through some of the world's best food destinations.</p>
+                            <a id="explore1" class="btn btn-secondary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow-lg rounded-3 equal-card">
+                        <img src="Pictures/pexels-santiago-sauceda-gonzalez-3426899-28037215.jpg" class="card-img-top rounded-3" alt="Wildlife Safari">
+                        <div class="card-body">
+                            <h5 class="card-title">Wildlife Safari</h5>
+                            <p class="card-text">Get up close to wildlife in their natural habitat for an unforgettable experience.</p>
+                            <a id="explore2" class="btn btn-secondary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow-lg rounded-3 equal-card">
+                        <img src="Pictures/pexels-yaroslav-shuraev-7041617.jpg" class="card-img-top rounded-3" alt="Spa Retreat">
+                        <div class="card-body">
+                            <h5 class="card-title">Spa & Wellness Retreat</h5>
+                            <p class="card-text">Relax and rejuvenate at our world-class spa retreats in serene locations.</p>
+                            <a id="explore3" class="btn btn-secondary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- This is for pop up message!-->
+
+        <script>
+            // Wait until the DOM is fully loaded
+            document.addEventListener('DOMContentLoaded', function () {
+                // Select the Start Exploring button
+                const explore1 = document.getElementById('explore1');
+
+                // Check if the button exists
+                if (explore1) {
+                    // Add click event listener to the button
+                    explore1.addEventListener('click', function () {
+                        // Show the alert when clicked
+                        alert("Work in progress.");
+                    });
+                }
+            });
+        </script>
+
+        <script>
+            // Wait until the DOM is fully loaded
+            document.addEventListener('DOMContentLoaded', function () {
+                // Select the Start Exploring button
+                const explore2 = document.getElementById('explore2');
+
+                // Check if the button exists
+                if (explore2) {
+                    // Add click event listener to the button
+                    explore2.addEventListener('click', function () {
+                        // Show the alert when clicked
+                        alert("Work in progress.");
+                    });
+                }
+            });
+        </script>
+
+        <script>
+            // Wait until the DOM is fully loaded
+            document.addEventListener('DOMContentLoaded', function () {
+                // Select the Start Exploring button
+                const explore3 = document.getElementById('explore3');
+
+                // Check if the button exists
+                if (explore3) {
+                    // Add click event listener to the button
+                    explore3.addEventListener('click', function () {
+                        // Show the alert when clicked
+                        alert("Work in progress.");
+                    });
+                }
+            });
+        </script>
+
+
+
+
+
+
+        <!-- Testimonials Section -->
+        <section class="testimonials mt-5">
+            <h2 class="text-center mb-4">What Our Users Say</h2>
+            <div class="container">
+                <div class="row">
+                    <!-- Testimonial 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="testimonial-card shadow-lg p-4 rounded-3">
+                            <blockquote class="blockquote text-center">
+                                <p class="lead">"The vacation recommendations were spot on! I had the most amazing trip!"</p>
+                                <footer class="blockquote-footer">Emily R.</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="testimonial-card shadow-lg p-4 rounded-3">
+                            <blockquote class="blockquote text-center">
+                                <p class="lead">"Great service and seamless booking. Highly recommend Holiday Explorer!"</p>
+                                <footer class="blockquote-footer">James K.</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="testimonial-card shadow-lg p-4 rounded-3">
+                            <blockquote class="blockquote text-center">
+                                <p class="lead">"Best travel agency ever! I found my dream destination in no time!"</p>
+                                <footer class="blockquote-footer">Sophia M.</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

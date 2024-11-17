@@ -1,0 +1,194 @@
+﻿/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #ffffff !important; /* White background for visibility */
+    padding: 20px;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: black; /* Set the brand text color to black */
+    margin-right: auto; /* Ensures the logo stays on the left */
+}
+
+.navbar-logo {
+    width: 150px; /* Adjust the logo size */
+    height: auto;
+    margin-right: 15px; /* Space between the logo and text */
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .navbar-nav .nav-item {
+        margin-left: 15px; /* Add spacing between menu items */
+    }
+
+    /* Navigation links - new stylish look */
+    .navbar-nav .nav-link {
+        color: #333 !important; /* Dark gray color for text */
+        font-weight: 500;
+        padding: 10px 20px; /* Add padding for better button-like appearance */
+        border-radius: 25px; /* Rounded corners for the button effect */
+        transition: all 0.3s ease; /* Smooth transition on hover */
+    }
+
+        .navbar-nav .nav-link:hover {
+            color: #fff !important; /* White text on hover */
+            background-color: #007bff; /* Blue background on hover */
+            transform: translateY(-3px); /* Slight lift effect */
+            box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3); /* Soft shadow */
+        }
+
+        .navbar-nav .nav-link:active {
+            background-color: #0056b3; /* Darker blue when clicked */
+            box-shadow: none; /* Remove shadow on click */
+        }
+
+/* Hero Section */
+.hero {
+    background: url('Pictures/pexels-karen-f-1376469-29334710.jpg') no-repeat center center/cover;
+    padding: 100px 0;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+    .hero h1 {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    .hero p {
+        font-size: 1.25rem;
+    }
+
+/* Card Styles */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px; /* Increased card height to make them longer */
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img-top {
+    height: 450px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures the image fills the area without distortion */
+    width: 100%;
+    border-radius: 10px 10px 0 0; /* Rounded top corners for the image */
+}
+
+/* Ensure all cards have the same height */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+    .card-container .col-lg-4,
+    .card-container .col-md-6 {
+        display: flex;
+        justify-content: stretch; /* Ensures the cards are stretched to fill their container */
+    }
+
+/* Card Text */
+.card-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    flex-grow: 1; /* Make sure the text area takes up available space */
+}
+
+/* Button Styling */
+.btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 767px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f8f9fa; /* Light background for the testimonials */
+    padding: 50px 20px;
+}
+
+    .testimonials h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+        color: #333;
+    }
+
+/* Card-style Testimonials */
+.testimonial-card {
+    background-color: #fff; /* White background for the cards */
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    .testimonial-card:hover {
+        transform: translateY(-10px); /* Subtle lift on hover */
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for hover effect */
+    }
+
+    .testimonial-card blockquote {
+        font-size: 1.2rem;
+        font-style: italic;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-card footer {
+        font-size: 1rem;
+        color: #00bcd4; /* Modern accent color */
+        font-weight: bold;
+    }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .testimonials h2 {
+        font-size: 2rem;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+    }
+}
+

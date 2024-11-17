@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach Paradise Properties</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">
+                <img src="Pictures/airdnd-high-resolution-logo-transparent.png" alt="Logo" class="navbar-logo">
+                Holiday Explorer
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Features</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Beach Paradise Properties -->
+    <section class="container mt-5">
+        <h2 class="text-center mb-5">Beach Paradise Properties</h2>
+
+        <div class="row">
+            <!-- Property Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-lg rounded-3">
+                    <img src="Pictures/pexels-pixabay-237272.jpg" class="card-img-top rounded-3" alt="Beach Property">
+                    <div class="card-body">
+                        <h5 class="card-title">Beachside Villa</h5>
+                        <p class="card-text">Location: Maldives</p>
+                        <p class="card-text">Price per night: $500</p>
+                        <a href="booking-form.html" class="btn btn-primary" onclick="storePropertyDetails('pexels-pixabay-237272.jpg', 'Maldives', '$500', 'Beachside Villa')">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Additional Properties -->
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-lg rounded-3">
+                    <img src="Pictures/pexels-lifeinmelancholy-786357.jpg" class="card-img-top rounded-3" alt="Beach Property">
+                    <div class="card-body">
+                        <h5 class="card-title">Beachside Apartment</h5>
+                        <p class="card-text">Location: Gold Coast</p>
+                        <p class="card-text">Price per night: $250</p>
+                        <a href="booking-form.html" class="btn btn-primary" onclick="storePropertyDetails('pexels-pixabay-237272.jpg', 'Maldives', '$300', 'Beachside Villa')">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

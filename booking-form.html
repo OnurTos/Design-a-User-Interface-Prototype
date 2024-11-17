@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Booking</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="booking-form.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <a href="index.html" class="btn btn-secondary back-button">Back to Home Page</a> <!-- Back Button above form -->
+
+        <h1 class="text-center mb-4">Book Your Stay</h1>
+        <div class="booking-container">
+            <!-- Booking Form -->
+            <div class="booking-form">
+                <form id="bookingForm">
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" id="fullName" class="form-control" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="adults" class="form-label">Number of Adults</label>
+                        <input type="number" id="adults" class="form-control" min="1" value="1" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="children" class="form-label">Number of Children</label>
+                        <input type="number" id="children" class="form-control" min="0" value="0">
+                    </div>
+                    <div class="mb-3">
+                        <label for="pets" class="form-label">Any Pets?</label>
+                        <select id="pets" class="form-control">
+                            <option value="no">No</option>
+                            <option value="yes">Yes</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="fromDate" class="form-label">From (Date)</label>
+                        <input type="date" id="fromDate" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="toDate" class="form-label">To (Date)</label>
+                        <input type="date" id="toDate" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Confirm Booking</button>
+                </form>
+            </div>
+
+
+            <!-- Include Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+            <!-- Script for capturing username-->
+            <script>
+           
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const form = document.getElementById('bookingForm');
+                    const fullNameInput = document.getElementById('fullName');
+
+                    form.addEventListener('submit', function(event) {
+                        event.preventDefault();  // Prevent form submission
+
+                    const userName = fullNameInput.value;
+
+                    if (userName) {
+                        alert('Thank you for booking, ' + userName + '!');
+                            } else {
+                        alert('Please enter your name.');
+                            }
+                        });
+                    });
+          
+                // Handle form submission
+                document.getElementById('bookingForm').addEventListener('submit', function (event) {
+                    event.preventDefault(); // Prevent default form submission
+
+                    // Show confirmation message
+                    alert('Booking is completed! Confirmation email has been sent.');
+                });
+            </script>
+
+         
+</body>
+</html>
